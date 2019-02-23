@@ -11,14 +11,14 @@ label {
 
 .checkbox label::before {
     background: url('checkbox.png') no-repeat top left;
-	content: "";
+    content: "";
     height: 30px;
     top: 0;
-	left: 0;
-	position: absolute;
+    left: 0;
+    position: absolute;
     width: 30px;
 }
 
-.checkbox input:checked + label::before {
+.checkbox input:checked+label::before {
     background-position-y: -32px;
 }
