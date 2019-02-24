@@ -15,7 +15,6 @@
 
 .radio label::before,
 .checkbox label::before {
-    background: url('checkbox.png') no-repeat top left;
     content: "";
     height: 30px;
     top: 0;
@@ -24,7 +23,18 @@
     width: 30px;
 }
 
-.radio input:checked+label::before,
+.checkbox label::before {
+    background: url('checkbox.png') no-repeat top left;
+}
+
+.radio label::before {
+    background: url('radio.png') no-repeat top left;
+}
+
+.radio input:checked+label::before {
+    background-position-y: -34px;
+}
+
 .checkbox input:checked+label::before {
     background-position-y: -32px;
 }

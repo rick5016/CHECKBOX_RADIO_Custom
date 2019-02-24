@@ -1,4 +1,1 @@
-CHECKBOX Custom
-
-TODO :
-- add radio PNG
+personalized checkbox and Radio button whith PNG or SVG
