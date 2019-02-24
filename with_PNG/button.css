@@ -1,14 +1,19 @@
+.radio input,
 .checkbox input {
     opacity: 0;
     position: absolute;
 }
 
-label {
-    display: block;
+.radio label,
+.checkbox label {
     padding: 5px 0 0px 35px;
     position: relative;
 }
+.checkbox label {
+    display: block;
+}
 
+.radio label::before,
 .checkbox label::before {
     background: url('checkbox.png') no-repeat top left;
     content: "";
@@ -19,6 +24,7 @@ label {
     width: 30px;
 }
 
+.radio input:checked+label::before,
 .checkbox input:checked+label::before {
     background-position-y: -32px;
 }
