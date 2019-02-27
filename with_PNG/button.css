@@ -6,9 +6,14 @@
 
 .radio label,
 .checkbox label {
-    padding: 5px 0 0px 35px;
+    padding: 5px 0 0px 33px;
     position: relative;
 }
+
+.radio label {
+    margin-right: 10px;
+}
+
 .checkbox label {
     display: block;
 }
@@ -37,4 +42,14 @@
 
 .checkbox input:checked+label::before {
     background-position-y: -32px;
+}
+
+.checkbox input:focus+label::before {
+    border: dotted 1px blue;
+    border-radius: 5px;
+}
+
+.radio input:focus+label::before {
+    border: dotted 1px blue;
+    border-radius: 50%;
 }

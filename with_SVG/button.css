@@ -11,8 +11,12 @@
 
 .radio label,
 .checkbox label {
-    padding: 5px 0 0px 35px;
+    padding: 5px 0 0px 33px;
     position: relative;
+}
+
+.radio label {
+    margin-right: 10px;
 }
 
 .checkbox label {
@@ -21,8 +25,8 @@
 
 .radio label::before,
 .checkbox label::before,
-.radio input:checked+label::before,
-.checkbox input:checked+label::before {
+.radio input:checked+label::after,
+.checkbox input:checked+label::after {
     font-family: icons !important;
     font-style: normal;
     font-weight: normal !important;
@@ -32,14 +36,10 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-size: 30px;
-}
-
-.radio label::before,
-.checkbox label::before {
-    height: 30px;
     top: 0;
     left: 0;
     position: absolute;
+    height: 30px;
     width: 30px;
 }
 
@@ -47,14 +47,24 @@
     content: "\f103";
 }
 
-.radio input:checked+label::before {
-    content: "\f102";
-}
-
-.checkbox label::before {
+.radio input:checked+label::after {
     content: "\f104";
 }
 
-.checkbox input:checked+label::before {
+.checkbox label::before {
+    content: "\f102";
+}
+
+.checkbox input:checked+label::after {
     content: "\f101";
+}
+
+.checkbox input:focus+label::before {
+    border: dotted 1px blue;
+    border-radius: 5px;
+}
+
+.radio input:focus+label::before {
+    border: dotted 1px blue;
+    border-radius: 50%;
 }
