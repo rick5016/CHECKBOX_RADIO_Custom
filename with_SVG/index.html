@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Custom CHECKBOX and RADIO button</title>
-    <link rel="stylesheet" href="style.css" media="screen" />
+    <link rel="stylesheet" href="../style.css" media="screen" />
     <link rel="stylesheet" href="button.css" media="screen" />
 </head>
 
@@ -12,7 +12,7 @@
     <form id="login-form" method="POST" action="">
 
         <div class="demo">
-            (<a href="http://rick5016.net/projets/CHECKBOX_RADIO_Custom/with_PNG">PNG</a>, 
+            (<a href="http://rick5016.net/projets/CHECKBOX_RADIO_Custom/with_PNG">PNG</a>,
             <a href="http://rick5016.net/projets/CHECKBOX_RADIO_Custom/with_SVG">SVG</a>,
             <a href="http://rick5016.net/projets/CHECKBOX_RADIO_Custom/with_CSS">CSS</a>)
             <h1>CHECKBOX Custom</h1>
@@ -20,7 +20,7 @@
             <div class="demo">
                 <div class="element">
                     <div class="checkbox">
-                        <input id="agree" name="agree" type="checkbox" value="agree-value">
+                        <input id="agree" name="agree" type="checkbox" value="agree-value" checked="checked">
                         <label for="agree">I agree with that</label>
                     </div>
                 </div>
@@ -31,6 +31,14 @@
                         <label for="also">I also agree with that</label>
                     </div>
                 </div>
+
+                <div class="element">
+                    <div class="checkbox">
+                        <input id="disabled" name="disabled" type="checkbox" value="disabled-value" disabled="disabled"
+                            checked="checked">
+                        <label for="disabled">You agree and you don't have a choice (disabled)</label>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -39,14 +47,24 @@
 
             <div class="demo">
                 <div class="element">
-                    <div class="element">Who wants cookies?</div>
+                    <div class="element">What do you need ?</div>
                     <div class="radio">
-                        <input type="radio" id="oneill" name="cookies" value="oneill">
-                        <label for="oneill">O'Neill</label>
-                        <input type="radio" id="daniel" name="cookies" value="daniel">
-                        <label for="daniel">Daniel</label>
-                        <input type="radio" id="carter" name="cookies" value="carter">
-                        <label for="carter">Carter</label>
+                        <input type="radio" id="money" name="need" value="money">
+                        <label for="money">Money</label>
+                        <input type="radio" id="love" name="need" value="love">
+                        <label for="love">Love</label>
+                        <input type="radio" id="projects" name="need" value="projects">
+                        <label for="projects">Projects</label>
+                    </div>
+                    <div class="element">1 + 2 ? (disabled)</div>
+                    <div class="radio">
+                        <input type="radio" id="one" name="calcul" value="one" disabled="disabled">
+                        <label for="one">One</label>
+                        <input type="radio" id="two" name="calcul" value="two" disabled="disabled">
+                        <label for="two">Two</label>
+                        <input type="radio" id="three" name="calcul" value="three" disabled="disabled"
+                            checked="checked">
+                        <label for="three">Three</label>
                     </div>
                 </div>
             </div>
